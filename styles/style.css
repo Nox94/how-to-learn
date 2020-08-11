@@ -332,6 +332,8 @@ z-index: 1;
 /*Подвал*/
 .footer {
   min-height: 350px;
+  display: flex;
+  flex-basis: 711px;
   background-color: #1f1f1f;
   border: 1px solid greenyellow;
 }
@@ -342,14 +344,13 @@ div, img, p, a {
 .footer__columns {
   display: flex;
   justify-content: space-between;
-  flex-basis: 711px;
   width: 90%;
   margin: 60px auto 40px;
   border: 1px solid blue;
 }
 
 .footer__column_content_copyright {
-width: 50%;
+  width: 50%;
 }
 
 .footer__column_content_info {
@@ -366,7 +367,7 @@ width: 50%;
   background-image: url(../images/logo_place_footer.svg);
 }
 
-.footer__footer__columns_author {
+.footer__author {
 color: white;
 line-height: 25px;
 font-size: 18px;
@@ -388,7 +389,6 @@ margin: 18px 0 18px;
   font-size: 18px;
   font-weight: 500;
   display: flex;
-  flex-direction: column;
   margin: 0;
   text-decoration: none;
 
@@ -398,10 +398,16 @@ margin: 18px 0 18px;
   margin-bottom: 16px;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
+  border: 1px solid green;
 }
- ul {
-   list-style: none;
- }
+
