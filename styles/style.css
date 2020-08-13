@@ -30,16 +30,19 @@
 }
 
 .header__title {
+  width: 730px;
   font-size: 102px;
   line-height: 96px;
   font-weight: 700;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 64px;
+  z-index: 2;
 }
 
 .header__subtitle {
   position: absolute;
+  width: 388px;
   left: 64px;
   bottom: 30px;
   margin-top: 0;
@@ -47,11 +50,13 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 25px;
+  z-index: 2;
 }
 
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  z-index: 2;
 }
 
 .header__main-illustration {
@@ -63,7 +68,6 @@
   z-index: 1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -145,7 +149,6 @@ margin-bottom: 30px;
 
 .table__cell {
   width: 250px;
-  color: white;
   margin-right: 0;
   margin-top: 60px;
 }
@@ -166,12 +169,8 @@ margin-bottom: 30px;
   margin: 0 0 20px;
 }
 
-.table__text_without_margin-bottom {
+.table__text:last-child {
   margin: 0;
-  color: black;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 /*Секция Фейнман*/
@@ -183,6 +182,7 @@ margin-bottom: 30px;
   flex-direction: column;
   position: relative;
   align-items: center; /*центрирование по вертикали*/
+  padding-top: 100px;
 }
 
 .feynman__main-illustration {
@@ -198,7 +198,7 @@ margin-bottom: 30px;
   font-size: 120px;
   line-height: 1.15;
   font-weight: 700;
-  margin: 100px auto 70px;
+  margin: 0 auto 70px;
   z-index: 1;
   text-align: center;
 }
@@ -231,7 +231,7 @@ margin-bottom: 30px;
   overflow: hidden;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   line-height: 69px;
   font-size: 60px;
   font-weight: 700;
@@ -241,7 +241,7 @@ margin-bottom: 30px;
   color: white;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   line-height: 34px;
   font-size: 24px;
   font-weight: 500;
@@ -251,7 +251,7 @@ margin-bottom: 30px;
   color: white;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -274,7 +274,6 @@ margin-bottom: 30px;
   font-weight: 700;
   color: white;
   margin: 0 0 20px;
-
 }
 
 .table__text_theme_dark {
@@ -285,12 +284,7 @@ margin-bottom: 30px;
   margin: 0 0 20px;
 }
 
-.table__text_without_margin-bottom {
-  margin: 0;
-  color: black;
-}
-
-.kaufman__triangle-illustration {
+.kaufman__triangle {
 background-image: url(../images/kaufman-triangle.svg);
 width: 877px;
 height: 877px;
@@ -305,8 +299,8 @@ z-index: 1;
 .footer {
   min-height: 350px;
   display: flex;
-  flex-basis: 711px;
   background-color: #1f1f1f;
+  border: solid 1px green;
 }
 
 .footer__columns {
@@ -314,28 +308,32 @@ z-index: 1;
   justify-content: space-between;
   width: 90%;
   margin: 60px auto 40px;
+  border: 1px solid pink;
 }
 
-.footer__column_content_copyright {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.footer__column_content_info {
-
-}
-
-.footer__column_content_social {
-
-}
 
 .logo_place_footer {
   width: 183px;
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
+  border: red 1px solid;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid pink;
+}
+
+.footer__column_content_info {
+  border: 1px solid pink;
+}
+
+.footer__column_content_social {
+  border: 1px solid pink;
 }
 
 .footer__author {
@@ -344,6 +342,7 @@ z-index: 1;
   font-size: 18px;
   font-weight: 500;
   margin: 18px 0 18px;
+  border: 1px solid pink;
 }
 
 .footer__column-heading {
@@ -352,31 +351,40 @@ z-index: 1;
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 20px;
+  border: 1px solid pink;
+}
+
+ul {
+  border: 1px solid yellow;
+}
+
+li {
+  border: 1px solid yellow;
 }
 
 .footer__column-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 1px solid pink;
+}
+
+.footer__link-itself {
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: 500;
-  display: flex;
-  margin: 0;
   text-decoration: none;
-  align-items: center;
+  border: 1px solid pink;
 }
 
-.footer__column-links:last-child {
+.footer__list-element_mrg-btm {
   margin-bottom: 16px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin:0;
 }
 
 .footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+  border: 1px solid pink;
 }
