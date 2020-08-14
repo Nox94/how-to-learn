@@ -98,20 +98,25 @@
 }
 
 .two-columns__main-text {
-min-width: 784px;
-width: 80%;
+  min-width: 784px;
+  width: 80%;
 }
 
 .two-columns__paragraph {
-margin-top: 0px;
-margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .two-columns__span-accent {
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 34px;
+  font-size: 24px;
 }
 
-.two-columns__paragraph:last-of-type{
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 /*Конец секции description*/
@@ -286,6 +291,7 @@ margin-bottom: 30px;
 
 .kaufman__triangle {
 background-image: url(../images/kaufman-triangle.svg);
+background-size: cover;
 width: 877px;
 height: 877px;
 position: absolute;
@@ -300,7 +306,6 @@ z-index: 1;
   min-height: 350px;
   display: flex;
   background-color: #1f1f1f;
-  border: solid 1px green;
 }
 
 .footer__columns {
@@ -308,7 +313,6 @@ z-index: 1;
   justify-content: space-between;
   width: 90%;
   margin: 60px auto 40px;
-  border: 1px solid pink;
 }
 
 
@@ -316,7 +320,6 @@ z-index: 1;
   width: 183px;
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
-  border: red 1px solid;
 }
 
 .footer__column_content_copyright {
@@ -325,15 +328,12 @@ z-index: 1;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  border: 1px solid pink;
 }
 
 .footer__column_content_info {
-  border: 1px solid pink;
 }
 
 .footer__column_content_social {
-  border: 1px solid pink;
 }
 
 .footer__author {
@@ -342,7 +342,6 @@ z-index: 1;
   font-size: 18px;
   font-weight: 500;
   margin: 18px 0 18px;
-  border: 1px solid pink;
 }
 
 .footer__column-heading {
@@ -351,22 +350,13 @@ z-index: 1;
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 20px;
-  border: 1px solid pink;
 }
 
-ul {
-  border: 1px solid yellow;
-}
-
-li {
-  border: 1px solid yellow;
-}
 
 .footer__column-links {
-  margin: 0;
+  margin: 0 0 16px;
   padding: 0;
   list-style-type: none;
-  border: 1px solid pink;
 }
 
 .footer__link-itself {
@@ -375,16 +365,10 @@ li {
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
-  border: 1px solid pink;
-}
-
-.footer__list-element_mrg-btm {
-  margin-bottom: 16px;
 }
 
 .footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
-  border: 1px solid pink;
 }
