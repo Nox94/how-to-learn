@@ -1,8 +1,9 @@
 @import url(./vendor/normalize.css);
 
 /*page*/
-@import url(../blocks/page/page.css);
+@import url(./blocks/page/page.css);
 
+@import url(./blocks/rotation/rotation.css);
 
 /*header*/
 @import url(./blocks/header/header.css);
@@ -12,6 +13,21 @@
 @import url(./blocks/header/__square-pic/header__square-pic.css);
 @import url(./blocks/header/__subtitle/header__subtitle.css);
 @import url(./blocks/header/__title/header__title.css);
+
+/*techniques*/
+@import url(./blocks/techniques/techniques.css);
+@import url(./blocks/techniques/cards/cards.css);
+@import url(./blocks/techniques/cards/__item/cards__item.css);
+@import url(./blocks/techniques/cards/__title/cards__title.css);
+@import url(./blocks/techniques/cards/__description/cards__description.css);
+@import url(./blocks/techniques/cards/__wrap-for-img/cards__wrap-for-img.css);
+@import url(./blocks/techniques/cards/__image/cards__image.css);
+
+/*video*/
+@import url(./blocks/video/video.css);
+@import url(./blocks/video/__iframes/video__iframes.css);
+@import url(./blocks/video/__iframe/video__iframe.css);
+
 
 
 /*description*/
@@ -29,6 +45,7 @@
 @import url(./blocks/digits/section-title/_theme_dark/section-title_theme_dark.css);
 @import url(./blocks/digits/section-subtitle/section-subtitle.css);
 @import url(./blocks/digits/section-subtitle/_theme_dark/section-subtitle_theme_dark.css);
+@import url(./blocks/digits/section-subtitle/_mrgn-btm/section_subtitle_mrgn-btm.css);
 @import url(./blocks/digits/table/table.css);
 @import url(./blocks/digits/table/_theme_dark/table_theme_dark.css);
 @import url(./blocks/digits/table/__heading/table__heading.css);
@@ -56,7 +73,6 @@
 @import url(./blocks/footer/__columns/footer__columns.css);
 @import url(./blocks/header/logo/logo.css);
 @import url(./blocks/header/logo/_place/logo_place_footer.css);
-@import url(./blocks/footer/logo/_place_footer/logo_place_footer.css);
 @import url(./blocks/footer/__author/footer__author.css);
 @import url(./blocks/footer/__column-heading/footer__column-heading.css);
 @import url(./blocks/footer/__column-links/footer__column-links.css);

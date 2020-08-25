@@ -13,4 +13,5 @@
   align-items: center; /*центрирование по вертикали*/
   background-color: #f2f2f2;
   margin-bottom: 100px;
+  overflow: hidden;
 }

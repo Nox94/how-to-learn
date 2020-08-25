@@ -1,0 +1,7 @@
+.video [
+  display: flex;
+  display: column;
+  align-items: center;
+  margin-bottom: 160px;
+  outline: 2px solid pink;
+]
