@@ -1,7 +1,8 @@
-.video [
+.video {
   display: flex;
-  display: column;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 160px;
-  outline: 2px solid pink;
-]
+  margin: 0;
+  outline: 2px solid red;
+  height: 430px;
+}

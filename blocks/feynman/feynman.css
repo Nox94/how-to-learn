@@ -1,8 +1,3 @@
-@import url(./__main-illustration/feynman____main-illustration.css);
-@import url(./__title/feynman__title.css);
-@import url(./__subtitle/feynman__subtitle.css);
-@import url(./__link/feynman__link.css);
-
 .feynman {
   height: 790px;
   background-color: #f2f2f2;
