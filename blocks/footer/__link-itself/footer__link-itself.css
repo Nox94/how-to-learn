@@ -5,3 +5,9 @@
   font-weight: 400;
   text-decoration: none;
 }
+
+.footer__link-itself:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s linear 0.5s;
+}
+
