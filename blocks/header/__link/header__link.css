@@ -3,3 +3,8 @@
   color: #2f80ed;
   z-index: 2;
 }
+
+.header__link:hover {
+  opacity: 0.5;
+  transition: opacity 0.2s linear 0.2s;
+}
