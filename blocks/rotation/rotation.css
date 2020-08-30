@@ -10,7 +10,7 @@
 .rotation {
     animation-name: rotation;
     animation-duration: 20s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }

@@ -2,6 +2,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  height: 430px;
+  margin-bottom: -80px;
 }
