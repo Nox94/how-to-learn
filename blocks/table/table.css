@@ -5,4 +5,6 @@
   justify-content: space-between;
   width: 1100px;
   margin: auto;
+  list-style: none;
+  padding: 0;
 }
